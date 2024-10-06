@@ -8,7 +8,8 @@ export default function HeroSection() {
         alt="Spotlight"
         layout="fill"
         priority={true}
-        className="animate-fade pointer-events-none absolute left-0 top-0 h-full object-cover"
+        objectFit="cover"
+        className="animate-fade pointer-events-none absolute left-0 top-0"
       />
       <div className="flex-center w-full flex-col gap-6 px-4">
         <span className="text-center text-xs uppercase tracking-widest text-gray-300">Dynamic Web Magic with Next.js</span>
