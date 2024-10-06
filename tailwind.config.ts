@@ -8,6 +8,7 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      container: { center: true, padding: "1rem" },
       animation: {
         fade: "fade 0.5s",
       },
