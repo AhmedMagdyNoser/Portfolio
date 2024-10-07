@@ -19,7 +19,7 @@ export default function ProjectCard({ project }: { project: Project }) {
         <h3 className="text-xl font-extrabold text-gray-100">{project.title}</h3>
 
         {/* Project Description */}
-        <p className="text-xs text-gray-400 sm:text-sm md:text-base" style={{ lineHeight: 1.8 }}>
+        <p className="text-xs text-gray-400 sm:text-sm md:text-[15px]" style={{ lineHeight: 1.8 }}>
           {project.description}
         </p>
       </div>
@@ -28,8 +28,12 @@ export default function ProjectCard({ project }: { project: Project }) {
         {/* Technologies */}
         <div className="flex items-center">
           {project.technologies.map((tech, i) => (
-            <span key={i} className="rounded bg-gray-700 px-2 py-1 text-xs text-white">
-              {tech}
+            <span
+              key={i}
+              title={tech.name}
+              className="flex-center -ml-[5px] h-10 w-10 overflow-hidden rounded-full border border-gray-800 bg-gradient-to-br from-gray-800 to-gray-950"
+            >
+              <Image src={tech.img} alt={tech.name} width={20} height={20} className="" />
             </span>
           ))}
         </div>
@@ -42,7 +46,7 @@ export default function ProjectCard({ project }: { project: Project }) {
             rel="noopener noreferrer"
             className="flex items-center gap-2 text-sm text-purple-300 transition-colors hover:text-purple-400"
           >
-            Check Live Site <solidIcons.ExternalLink />
+            Check Live Site <solidIcons.ExternalLink size={15} />
           </a>
         )}
       </footer>

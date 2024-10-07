@@ -1,4 +1,5 @@
 import ProjectCard from "@/components/project-card";
+import { technologies } from "@/lib/constants";
 
 const projects: Project[] = [
   {
@@ -6,7 +7,7 @@ const projects: Project[] = [
     description:
       "Fashion collections for men and women, blending elegance and modern trends with quality craftsmanship to showcase your unique style.",
     img: "/imgs/projects/leopard.png",
-    technologies: ["Vite", "TypeScript", "React", "Tailwind"],
+    technologies: [technologies.Vite, technologies.TS, technologies.React, technologies.Tailwind],
     liveDome: "https://leopardegy.com",
   },
   {
@@ -14,7 +15,7 @@ const projects: Project[] = [
     description:
       "A CRM platform that simplifies sales, optimizes customer management, and increases productivity with lead tracking, automation, and analytics.",
     img: "/imgs/projects/pro-sales.jpg",
-    technologies: ["Vite", "JavaScript", "React", "Tailwind"],
+    technologies: [technologies.Vite, technologies.JS, technologies.React, technologies.Tailwind],
   },
 ];
 
