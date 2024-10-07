@@ -11,6 +11,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @keyframes fade {
   0% {
     opacity: 0;

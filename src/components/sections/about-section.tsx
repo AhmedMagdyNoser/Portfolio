@@ -25,7 +25,7 @@ const skills = [
 
 export default function AboutSection() {
   return (
-    <section className="section bg-gradient-to-b from-[#0a0a0a] to-[#000310]">
+    <section id="about" className="section bg-gradient-to-b from-[#0a0a0a] to-[#000310]">
       <div className={`container flex flex-col ${GAP}`}>
         <h2 className="mb-4 text-center text-3xl font-bold text-gray-50 lg:text-4xl">Who am I</h2>
 
