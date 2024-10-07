@@ -9,8 +9,14 @@
   .section {
     @apply flex-center min-h-screen py-10;
   }
+  .btn-style {
+    @apply flex-center gap-2 rounded-2xl px-6 py-3 font-medium text-gray-100 transition-colors duration-[350ms];
+  }
   .basic-btn {
-    @apply flex-center gap-2 rounded-2xl bg-gray-900 px-6 py-3 font-medium text-gray-100 transition-colors duration-[350ms] hover:bg-gray-800;
+    @apply btn-style bg-gray-900 hover:bg-gray-800;
+  }
+  .blue-btn {
+    @apply btn-style bg-blue-600 hover:bg-blue-500;
   }
 }
 

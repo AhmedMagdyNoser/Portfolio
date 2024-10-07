@@ -3,6 +3,8 @@ import AboutCard from "@/components/about-card";
 import BlockQuote from "@/components/block-quote";
 import SkillBadge from "@/components/skill-badge";
 import EmailButton from "@/components/email-button";
+import solidIcons from "@/components/icons/solid";
+import outlineIcons from "@/components/icons/outline";
 
 const GAP = "gap-8";
 
@@ -29,12 +31,22 @@ export default function AboutSection() {
       <div className={`container flex flex-col ${GAP}`}>
         <h2 className="mb-2 text-center text-3xl font-bold text-gray-50">Who am I</h2>
 
-        <BlockQuote className="flex-center p-8 md:p-16">
+        <BlockQuote className="flex-center flex-col gap-6 p-8 md:p-16">
           <p className="text-center text-base font-semibold leading-[1.75] text-gray-100 md:text-lg md:leading-[1.75]">
             I&apos;m a software engineer with expertise in building scalable and maintainable web applications using React,
             Next.js, and TypeScript. I prioritize writing clean, efficient code while delivering seamless and engaging user
             experiences.
           </p>
+          <div className="flex-center flex-col gap-2 sm:flex-row">
+            <a href="/cv.pdf" download="Ahmed Magdy CV.pdf" className="basic-btn text-sm">
+              <solidIcons.Download size={17.5} />
+              Download my CV
+            </a>
+            <a href="#projects" className="blue-btn text-sm">
+              <outlineIcons.LocationArrow size={17.5} />
+              See my projects
+            </a>
+          </div>
         </BlockQuote>
 
         <div className={`grid grid-cols-1 ${GAP} lg:grid-cols-5`}>
