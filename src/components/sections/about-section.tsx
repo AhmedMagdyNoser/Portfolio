@@ -1,8 +1,26 @@
 import Image from "next/image";
 import AboutCard from "@/components/about-card";
 import BlockQuote from "@/components/block-quote";
+import SkillBadge from "@/components/skill-badge";
 
 const GAP = "gap-8";
+
+const skills = [
+  "React",
+  "Redux",
+  "Next.js",
+  "Tailwind",
+  "TypeScript",
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "Webpack",
+  "Vite",
+  "Node.js",
+  "RESTful APIs",
+  "Git",
+  "GitHub",
+];
 
 export default function AboutSection() {
   return (
@@ -25,12 +43,28 @@ export default function AboutSection() {
               I prioritize client collaboration, fostering open communication
             </h3>
           </AboutCard>
+
           <div className={`grid grid-cols-1 ${GAP} grid-rows-2 lg:col-span-2`}>
-            <AboutCard className="flex-center bg-gradient-to-br from-gray-800 to-gray-950 px-16">
-              <h3 className="about-box-heading text-center">Tech Stack</h3>
+            <AboutCard className="relative">
+              {/* Skills in the background */}
+              <div
+                dir="rtl"
+                className="pointer-events-none absolute right-0 top-0 flex h-full w-[68%] flex-wrap gap-2 p-4 opacity-35"
+              >
+                {skills.map((skill) => (
+                  <SkillBadge key={skill} name={skill} />
+                ))}
+              </div>
+
+              {/* Content */}
+              <div className="relative z-10 flex h-full w-full flex-col justify-center gap-1 bg-gradient-to-r from-gray-900 from-[30%] to-[#03071225] px-10 lg:gap-2">
+                <p className="text-xs text-gray-400 lg:text-sm">I constantly try to improve</p>
+                <h3 className="text-xl font-bold lg:text-[1.65rem]">My tech stack</h3>
+              </div>
             </AboutCard>
-            <AboutCard className="flex-center h-full w-full flex-col gap-4 bg-gradient-to-r from-purple-500 via-purple-600 via-10% to-blue-700 to-90% p-8">
-              <h3 className="about-box-heading text-center">Start a project together?</h3>
+
+            <AboutCard className="flex-center h-full w-full flex-col gap-4 bg-gradient-to-r from-purple-600 to-blue-800 to-90% p-8">
+              <h3 className="text-center text-xl font-bold lg:text-2xl lg:leading-10">Start a project together?</h3>
               <button className="flex-center rounded-xl bg-gray-950 px-6 py-3 text-sm text-white transition-colors duration-[350ms] hover:bg-gray-800 sm:text-base">
                 Copy my email address
               </button>

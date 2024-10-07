@@ -13,9 +13,6 @@ body {
   .section {
     @apply flex-center min-h-screen py-10;
   }
-  .about-box-heading {
-    @apply font-bold text-xl lg:text-2xl lg:leading-10
-  }
 }
 
 @keyframes fade {
