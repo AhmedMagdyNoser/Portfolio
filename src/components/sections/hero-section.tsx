@@ -16,7 +16,7 @@ export default function HeroSection() {
       <div className="flex-center relative w-full flex-col gap-6 px-4">
         <Image
           src="/imgs/me.jpg"
-          alt="Ahmed Magdy"
+          alt="Ahmed Magdy Profile Picture"
           width={180}
           height={180}
           priority={true}
@@ -35,7 +35,7 @@ export default function HeroSection() {
           </p>
         </BlockQuote>
 
-        <button className="flex-center rounded-2xl border border-gray-800 bg-gray-950 px-6 py-3 text-white transition-colors duration-[350ms] hover:bg-gray-800">
+        <button className="flex-center rounded-2xl border border-[#151930] bg-gray-950 px-6 py-3 font-bold text-white transition-colors duration-[350ms] hover:bg-gray-800">
           Show my work
         </button>
       </div>

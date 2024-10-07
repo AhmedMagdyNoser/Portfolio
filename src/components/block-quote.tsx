@@ -1,7 +1,7 @@
 export default function BlockQuote({ className = "", children }: { className?: string; children?: React.ReactNode }) {
   return (
     <blockquote
-      className={`relative max-w-full rounded-3xl border border-gray-800 bg-gradient-to-br from-gray-900 to-transparent p-6 ${className}`}
+      className={`relative max-w-full rounded-3xl border border-[#151930] bg-gradient-to-br from-gray-900 to-transparent p-6 ${className}`}
     >
       <svg className="absolute -top-5 left-2 size-10 text-gray-100 opacity-75" viewBox="0 0 16 16">
         <path
