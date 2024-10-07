@@ -30,7 +30,7 @@ export default function AboutSection() {
 
         <BlockQuote className="flex-center p-8 md:p-16">
           <p className="text-center text-base font-semibold leading-[1.75] text-gray-100 md:text-lg md:leading-[1.75]">
-            I'm a software engineer with expertise in building scalable and maintainable web applications using React,
+            I&apos;m a software engineer with expertise in building scalable and maintainable web applications using React,
             Next.js, and TypeScript. I prioritize writing clean, efficient code while delivering seamless and engaging user
             experiences.
           </p>
