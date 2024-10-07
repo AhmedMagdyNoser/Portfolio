@@ -1,5 +1,5 @@
-import HeroSection from "@/components/hero-section";
-import AboutSection from "@/components/about-section";
+import HeroSection from "@/components/sections/hero-section";
+import AboutSection from "@/components/sections/about-section";
 
 export default function Page() {
   return (

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import BlockQuote from "./block-quote";
+import BlockQuote from "@/components/block-quote";
 
 export default function HeroSection() {
   return (
