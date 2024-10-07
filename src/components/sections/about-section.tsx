@@ -2,6 +2,7 @@ import Image from "next/image";
 import AboutCard from "@/components/about-card";
 import BlockQuote from "@/components/block-quote";
 import SkillBadge from "@/components/skill-badge";
+import EmailButton from "@/components/email-button";
 
 const GAP = "gap-8";
 
@@ -65,9 +66,7 @@ export default function AboutSection() {
 
             <AboutCard className="flex-center h-full w-full flex-col gap-4 bg-gradient-to-r from-purple-600 to-blue-800 to-90% p-8">
               <h3 className="text-center text-xl font-bold">Start a project together?</h3>
-              <button className="flex-center rounded-xl bg-gray-950 px-6 py-3 text-sm text-white transition-colors duration-[350ms] hover:bg-gray-800 sm:text-base">
-                Copy my email address
-              </button>
+              <EmailButton />
             </AboutCard>
           </div>
         </div>
