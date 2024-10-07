@@ -6,10 +6,9 @@ export default function HeroSection() {
       <Image
         src="/imgs/spotlight.png"
         alt="Spotlight"
-        layout="fill"
+        fill
         priority={true}
-        objectFit="cover"
-        className="animate-fade pointer-events-none absolute left-0 top-0"
+        className="pointer-events-none absolute left-0 top-0 animate-fade object-cover"
       />
       <div className="flex-center w-full flex-col gap-6 px-4">
         <span className="text-center text-xs uppercase tracking-widest text-gray-300">Dynamic Web Magic with Next.js</span>
@@ -19,7 +18,7 @@ export default function HeroSection() {
         <p className="text-center text-sm text-gray-300 sm:text-base md:text-lg">
           Hi! I&apos;m <strong className="font-medium text-white">Ahmed Magdy</strong>, a Next.js developer.
         </p>
-        <button className="flex items-center justify-center rounded-xl border border-gray-800 bg-gray-950 px-6 py-3 text-white transition-colors duration-[350ms] hover:bg-gray-800">
+        <button className="flex-center rounded-xl border border-gray-800 bg-gray-950 px-6 py-3 text-white transition-colors duration-[350ms] hover:bg-gray-800">
           Show my work
         </button>
       </div>
