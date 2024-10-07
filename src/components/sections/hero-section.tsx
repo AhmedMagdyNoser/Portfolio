@@ -25,7 +25,7 @@ export default function HeroSection() {
         />
 
         <div className="flex-center flex-col gap-3">
-          <h1 className="text-center text-3xl font-extrabold tracking-tighter text-white">Ahmed Magdy</h1>
+          <h1 className="text-center text-3xl font-black tracking-tight text-white">Ahmed Magdy</h1>
           <p className="text-center text-sm text-gray-300">A Next.js | TypeScript Developer</p>
         </div>
 
@@ -35,7 +35,7 @@ export default function HeroSection() {
           </p>
         </BlockQuote>
 
-        <button className="flex-center rounded-2xl border border-[#151930] bg-gray-950 px-6 py-3 font-bold text-white transition-colors duration-[350ms] hover:bg-gray-800">
+        <button className="flex-center rounded-2xl border border-[#151930] bg-gray-900 px-6 py-3 font-medium text-white transition-colors duration-[350ms] hover:bg-gray-800">
           Show my work
         </button>
       </div>
