@@ -7,11 +7,14 @@ body {
 }
 
 @layer utilities {
-  .about-box-heading {
-    @apply text-xl font-bold lg:text-2xl lg:leading-10
-  }
   .flex-center {
     @apply flex items-center justify-center;
+  }
+  .section {
+    @apply flex-center min-h-screen py-10;
+  }
+  .about-box-heading {
+    @apply font-bold text-xl lg:text-2xl lg:leading-10
   }
 }
 

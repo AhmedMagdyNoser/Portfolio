@@ -5,9 +5,9 @@ const GAP = "gap-8";
 
 export default function AboutSection() {
   return (
-    <section className="bg-gradient-to-b from-[#0a0a0a] to-[#000310] py-20">
+    <section className="section bg-gradient-to-b from-[#0a0a0a] to-[#000310]">
       <div className={`container flex flex-col ${GAP}`}>
-        <h2 className="mb-4 text-center text-3xl font-bold text-white lg:text-4xl">Who am I?</h2>
+        <h2 className="mb-4 text-center text-3xl font-bold text-white lg:text-4xl">Who am I</h2>
         <div className={`grid grid-cols-1 ${GAP} lg:grid-cols-5`}>
           <AboutBox className="relative flex h-[415px] items-end lg:col-span-3">
             <Image src="/imgs/about.jpg" alt="About" fill priority={true} className="absolute left-0 top-0 object-cover" />
