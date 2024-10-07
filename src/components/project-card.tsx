@@ -7,7 +7,7 @@ export default function ProjectCard({ project }: { project: Project }) {
       {/* Project Image */}
       <figure
         style={{ backgroundImage: "radial-gradient(circle, #3f5585, #13162d)", aspectRatio: "2/1" }}
-        className="relative flex w-full justify-center overflow-hidden rounded-xl"
+        className="relative flex w-full justify-center overflow-hidden rounded-3xl"
       >
         <div className="relative mx-6 mt-2 h-full w-full">
           <Image src={project.img} alt={project.title} fill className="rotate-3 rounded-md object-cover shadow" />
@@ -31,9 +31,9 @@ export default function ProjectCard({ project }: { project: Project }) {
             <span
               key={i}
               title={tech.name}
-              className="flex-center -ml-[5px] h-10 w-10 overflow-hidden rounded-full border border-gray-800 bg-gradient-to-br from-gray-800 to-gray-950"
+              className="flex-center -ml-[5px] h-9 w-9 overflow-hidden rounded-full border border-gray-800 bg-gradient-to-br from-gray-800 to-gray-950 sm:h-10 sm:w-10"
             >
-              <Image src={tech.img} alt={tech.name} width={20} height={20} className="" />
+              <Image src={tech.img} alt={tech.name} width={20} height={20} className="h-[14px] sm:h-4" />
             </span>
           ))}
         </div>

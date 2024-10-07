@@ -16,12 +16,13 @@ const projects: Project[] = [
       "A CRM platform that simplifies sales, optimizes customer management, and increases productivity with lead tracking, automation, and analytics.",
     img: "/imgs/projects/pro-sales.jpg",
     technologies: [technologies.Vite, technologies.JS, technologies.React, technologies.Tailwind],
+    liveDome: "https://ahmedmagdynoser.github.io/Pro-Sales",
   },
 ];
 
 export default function ProjectsSection() {
   return (
-    <section id="projects" className="section bg-[#000310]">
+    <section id="projects" className="section bg-gradient-to-b from-[#000310] to-gray-900">
       <div className="container">
         <h2 className="mb-10 text-center text-3xl font-bold text-gray-50">
           A small selection of <span className="text-purple-300">recent projects</span>
