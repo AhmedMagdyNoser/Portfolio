@@ -3,7 +3,7 @@ import solidIcons from "@/components/icons/solid";
 
 export default function ProjectCard({ project }: { project: Project }) {
   return (
-    <div className="relative flex flex-col gap-4 rounded-3xl border border-gray-800 p-5 shadow-lg sm:p-6">
+    <div className="relative flex flex-col gap-4 rounded-3xl border border-gray-800 p-5 sm:p-6">
       {/* Project Image */}
       <figure
         style={{ backgroundImage: "radial-gradient(circle, #3f5585, #13162d)", aspectRatio: "2/1" }}
