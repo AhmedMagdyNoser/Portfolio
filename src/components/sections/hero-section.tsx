@@ -35,10 +35,7 @@ export default function HeroSection() {
           </p>
         </BlockQuote>
 
-        <a
-          href="#about"
-          className="flex-center rounded-2xl border border-[#151930] bg-gray-900 px-6 py-3 font-medium text-white transition-colors duration-[350ms] hover:bg-gray-800"
-        >
+        <a href="#about" className="basic-btn">
           Show my work 🚀
         </a>
       </div>

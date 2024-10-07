@@ -27,7 +27,7 @@ export default function AboutSection() {
   return (
     <section id="about" className="section bg-gradient-to-b from-[#0a0a0a] to-[#000310]">
       <div className={`container flex flex-col ${GAP}`}>
-        <h2 className="mb-4 text-center text-3xl font-bold text-gray-50 lg:text-4xl">Who am I</h2>
+        <h2 className="mb-2 text-center text-3xl font-bold text-gray-50">Who am I</h2>
 
         <BlockQuote className="flex-center p-8 md:p-16">
           <p className="text-center text-base font-semibold leading-[1.75] text-gray-100 md:text-lg md:leading-[1.75]">

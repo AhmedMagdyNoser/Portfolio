@@ -35,10 +35,7 @@ export default function EmailButton() {
   };
 
   return (
-    <button
-      onClick={handleCopy}
-      className="flex-center gap-2 rounded-xl bg-gray-950 px-6 py-3 text-sm text-gray-100 transition-colors duration-[350ms] hover:bg-gray-800"
-    >
+    <button onClick={handleCopy} className="basic-btn text-sm">
       {copied ? <solidIcons.Check /> : <outlineIcons.Copy />}
       {copied ? "Email copied!" : "Copy my email address"}
     </button>
