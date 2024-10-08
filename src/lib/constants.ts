@@ -12,9 +12,9 @@ export const allTechnologies: Record<"JS" | "TS" | "Vite" | "React" | "Next" | "
 export const author = {
   img: "/imgs/me.jpg",
   name: "Ahmed Magdy",
-  jobTitle: "A Next.js | TypeScript Developer",
+  jobTitle: "Software Engineer",
   description:
-    "I'm a software engineer with expertise in building scalable and maintainable web applications using React, Next.js, and TypeScript. I prioritize writing clean, efficient code while delivering seamless and engaging user experiences.",
+    "A software engineer specializing in React, Next.js, and TypeScript, dedicated to building high-performance web applications. I focus on clean, efficient code to deliver innovative solutions that adapt to future growth and enhance user experience.",
   email: "ahmed.magdy.1138@gmail.com",
   cvLink: "/ahmed-magdy-cv.pdf",
 };
