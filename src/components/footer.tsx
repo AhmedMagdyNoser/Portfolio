@@ -11,11 +11,6 @@ const socials = [
     link: "https://www.linkedin.com/in/AhmedMagdyNoser",
     icon: solidIcons.Linkedin,
   },
-  {
-    name: "Facebook",
-    link: "hhttps://facebook.com/AhmedMagdyNoser",
-    icon: solidIcons.Facebook,
-  },
 ];
 
 export default function Footer({ className = "" }: { className?: string }) {
@@ -32,7 +27,7 @@ export default function Footer({ className = "" }: { className?: string }) {
               title={social.name}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-center h-9 w-9 rounded-xl border border-gray-800 bg-gray-900 text-gray-300 transition-colors hover:bg-gray-800 hover:text-gray-200"
+              className="flex-center h-9 w-9 rounded-lg border border-gray-800 bg-gray-900 text-gray-300 transition-colors hover:bg-gray-800 hover:text-gray-200"
             >
               <social.icon size={18} />
             </a>

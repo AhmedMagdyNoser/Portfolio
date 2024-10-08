@@ -5,6 +5,7 @@ import SkillBadge from "@/components/skill-badge";
 import EmailButton from "@/components/email-button";
 import solidIcons from "@/components/icons/solid";
 import outlineIcons from "@/components/icons/outline";
+import { LightPlus, LightStar } from "@/components/stars";
 
 const GAP = "gap-8";
 
@@ -29,7 +30,11 @@ export default function AboutSection({ className = "" }: { className?: string })
   return (
     <section id="about" className={`section ${className}`}>
       <div className={`container flex flex-col ${GAP}`}>
-        <h2 className="mb-2 text-center text-3xl font-bold text-gray-50">Who am I</h2>
+        <header className="relative mx-auto mb-2 w-fit">
+          <h2 className="text-center text-3xl font-bold text-gray-50">Who am I</h2>
+          <LightPlus className="absolute -left-10 -top-2 opacity-50" />
+          <LightPlus className="absolute -bottom-2 -right-10 opacity-50" />
+        </header>
 
         <BlockQuote className="flex-center flex-col gap-6 p-8 md:p-16">
           <p className="text-center text-base font-semibold leading-[1.75] text-gray-100 md:text-lg md:leading-[1.75]">
