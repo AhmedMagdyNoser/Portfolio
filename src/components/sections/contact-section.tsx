@@ -4,7 +4,7 @@ export default function ContactSection({ className = "" }: { className?: string 
   return (
     <section className={`section relative overflow-hidden ${className}`}>
       <div
-        style={{ backgroundImage: "radial-gradient(ellipse, #ffff9515, #0000, #0000)" }}
+        style={{ backgroundImage: "radial-gradient(ellipse, #ffffff15, #0000, #0000)" }}
         className="absolute left-1/2 top-1/2 h-[875px] w-full -translate-x-1/2 -translate-y-1/2"
       />
       <div className="flex-center container flex-col gap-10">
