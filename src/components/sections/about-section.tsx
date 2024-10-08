@@ -6,25 +6,9 @@ import EmailButton from "@/components/email-button";
 import solidIcons from "@/components/icons/solid";
 import outlineIcons from "@/components/icons/outline";
 import { LightPlus } from "@/components/stars";
+import { cvLink, description, techStack } from "@/lib/constants";
 
 const GAP = "gap-8";
-
-const skills = [
-  "React",
-  "Redux",
-  "Next.js",
-  "Tailwind",
-  "TypeScript",
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "Webpack",
-  "Vite",
-  "Node.js",
-  "RESTful APIs",
-  "Git",
-  "GitHub",
-];
 
 export default function AboutSection({ className = "" }: { className?: string }) {
   return (
@@ -38,12 +22,10 @@ export default function AboutSection({ className = "" }: { className?: string })
 
         <BlockQuote className="flex-center flex-col gap-6 p-8 md:p-16">
           <p className="text-center text-base font-semibold leading-[1.75] text-gray-100 md:text-lg md:leading-[1.75]">
-            I&apos;m a software engineer with expertise in building scalable and maintainable web applications using React,
-            Next.js, and TypeScript. I prioritize writing clean, efficient code while delivering seamless and engaging user
-            experiences.
+            {description}
           </p>
           <div className="flex-center flex-col gap-2 sm:flex-row">
-            <a href="/ahmed-magdy-cv.pdf" download="Ahmed_Magdy_CV.pdf" className="basic-btn text-sm">
+            <a href={cvLink} download="CV.pdf" className="basic-btn text-sm">
               <solidIcons.Download size={17.5} />
               Download my CV
             </a>
@@ -76,7 +58,7 @@ export default function AboutSection({ className = "" }: { className?: string })
                 dir="rtl"
                 className="pointer-events-none absolute right-0 top-0 flex h-full w-[68%] flex-wrap gap-2 p-4 opacity-35"
               >
-                {skills.map((skill) => (
+                {techStack.map((skill) => (
                   <SkillBadge key={skill} name={skill} />
                 ))}
               </div>
@@ -88,7 +70,7 @@ export default function AboutSection({ className = "" }: { className?: string })
               </div>
             </AboutCard>
 
-            <AboutCard className="flex-center h-full w-full flex-col gap-4 bg-gradient-to-r from-purple-600 to-blue-800 to-90% p-8">
+            <AboutCard className="flex-center h-full w-full flex-col gap-4 bg-gradient-to-r from-purple-600 to-blue-800 p-8">
               <h3 className="text-center text-xl font-bold">Start a project together?</h3>
               <EmailButton />
             </AboutCard>

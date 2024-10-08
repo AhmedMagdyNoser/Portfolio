@@ -1,28 +1,18 @@
 import solidIcons from "@/components/icons/solid";
-
-const socials = [
-  {
-    name: "GitHub",
-    link: "https://github.com/AhmedMagdyNoser",
-    icon: solidIcons.Github,
-  },
-  {
-    name: "LinkedIn",
-    link: "https://www.linkedin.com/in/AhmedMagdyNoser",
-    icon: solidIcons.Linkedin,
-  },
-];
+import { name, socialLinks } from "@/lib/constants";
 
 export default function Footer({ className = "" }: { className?: string }) {
   return (
     <footer className={`${className}`}>
       <div className="container flex flex-col flex-wrap items-center justify-between gap-4 py-8 sm:flex-row">
-        <div className="text-sm text-gray-100 sm:text-base">Copyright © {new Date().getFullYear()} Ahmed Magdy</div>
+        <div className="text-sm text-gray-100 sm:text-base">
+          Copyright © {new Date().getFullYear()} {name}
+        </div>
 
         <div className="flex justify-center gap-3">
-          {socials.map((social, i) => (
+          {socialLinks.map((social) => (
             <a
-              key={i}
+              key={social.name}
               href={social.link}
               title={social.name}
               target="_blank"
