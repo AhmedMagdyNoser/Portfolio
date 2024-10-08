@@ -11,10 +11,10 @@ export default function ContactSection({ className = "" }: { className?: string 
           Ready to take <span className="text-purple-300">your</span> digital presence to the next level?
         </h2>
         <p className="w-[650px] max-w-full text-center text-gray-400">
-          Let's make something special. Let's discuss how I can help you achieve your goals.
+          Let&apos;s make something special. Let&apos;s discuss how I can help you achieve your goals.
         </p>
         <a className="basic-btn" href="mailto:ahmed.magdy.1138@gmail.com">
-          Let's get in touch
+          Let&apos;s get in touch
           <solidIcons.LocationArrow size={20} />
         </a>
       </div>
