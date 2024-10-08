@@ -1,6 +1,6 @@
 import solidIcons from "@/components/icons/solid";
 import { LightPlus, LightStar } from "@/components/stars";
-import { email } from "@/lib/constants";
+import { author } from "@/lib/constants";
 
 export default function ContactSection({ className = "" }: { className?: string }) {
   return (
@@ -19,7 +19,7 @@ export default function ContactSection({ className = "" }: { className?: string 
         <p className="w-[650px] max-w-full text-center text-gray-400">
           Let&apos;s make something special. Let&apos;s discuss how I can help you achieve your goals.
         </p>
-        <a className="basic-btn border border-gray-800" href={`mailto:${email}`}>
+        <a className="basic-btn border border-gray-800" href={`mailto:${author.email}`}>
           Let&apos;s get in touch
           <solidIcons.LocationArrow size={20} />
         </a>

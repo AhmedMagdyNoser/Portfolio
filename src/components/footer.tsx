@@ -1,12 +1,11 @@
-import solidIcons from "@/components/icons/solid";
-import { name, socialLinks } from "@/lib/constants";
+import { author, socialLinks } from "@/lib/constants";
 
 export default function Footer({ className = "" }: { className?: string }) {
   return (
     <footer className={`${className}`}>
       <div className="container flex flex-col flex-wrap items-center justify-between gap-4 py-8 sm:flex-row">
         <div className="text-sm text-gray-100 sm:text-base">
-          Copyright © {new Date().getFullYear()} {name}
+          Copyright © {new Date().getFullYear()} {author.name}
         </div>
 
         <div className="flex justify-center gap-3">

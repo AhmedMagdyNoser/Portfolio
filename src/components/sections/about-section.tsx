@@ -6,7 +6,7 @@ import EmailButton from "@/components/email-button";
 import solidIcons from "@/components/icons/solid";
 import outlineIcons from "@/components/icons/outline";
 import { LightPlus } from "@/components/stars";
-import { cvLink, description, techStack } from "@/lib/constants";
+import { author, techStack } from "@/lib/constants";
 
 const GAP = "gap-8";
 
@@ -22,10 +22,10 @@ export default function AboutSection({ className = "" }: { className?: string })
 
         <BlockQuote className="flex-center flex-col gap-6 p-8 md:p-16">
           <p className="text-center text-base font-semibold leading-[1.75] text-gray-100 md:text-lg md:leading-[1.75]">
-            {description}
+            {author.description}
           </p>
           <div className="flex-center flex-col gap-2 sm:flex-row">
-            <a href={cvLink} download="CV.pdf" className="basic-btn text-sm">
+            <a href={author.cvLink} download="CV.pdf" className="basic-btn text-sm">
               <solidIcons.Download size={17.5} />
               Download my CV
             </a>

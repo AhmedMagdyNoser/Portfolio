@@ -1,7 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { name, description } from "@/lib/constants";
+import { author } from "@/lib/constants";
 
 const inter = Inter({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
@@ -9,7 +9,7 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = { title: name, description };
+export const metadata: Metadata = { title: author.name, description: author.description };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (

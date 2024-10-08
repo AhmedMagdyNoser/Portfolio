@@ -1,6 +1,6 @@
 import Image from "next/image";
 import BlockQuote from "@/components/block-quote";
-import { jobTitle, name, profileImg } from "@/lib/constants";
+import { author } from "@/lib/constants";
 
 export default function HeroSection({ className = "" }: { className?: string }) {
   return (
@@ -17,8 +17,8 @@ export default function HeroSection({ className = "" }: { className?: string }) 
       {/* Content */}
       <div className="flex-center relative w-full flex-col gap-6 px-4">
         <Image
-          src={profileImg}
-          alt={`${name} profile picture`}
+          src={author.img}
+          alt={`${author.name} profile picture`}
           quality={85}
           width={180}
           height={180}
@@ -28,8 +28,8 @@ export default function HeroSection({ className = "" }: { className?: string }) 
         />
 
         <div className="flex-center flex-col gap-3">
-          <h1 className="text-center text-3xl font-black tracking-tight text-white">{name}</h1>
-          <p className="text-center text-sm text-gray-300">{jobTitle}</p>
+          <h1 className="text-center text-3xl font-black tracking-tight text-white">{author.name}</h1>
+          <p className="text-center text-sm text-gray-300">{author.jobTitle}</p>
         </div>
 
         <BlockQuote className="flex-center my-2 px-8">

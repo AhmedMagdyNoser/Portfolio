@@ -3,7 +3,9 @@
 import { useState } from "react";
 import outlineIcons from "@/components/icons/outline";
 import solidIcons from "@/components/icons/solid";
-import { email } from "@/lib/constants";
+import { author } from "@/lib/constants";
+
+const email = author.email;
 
 export default function EmailButton() {
   const [copied, setCopied] = useState(false);

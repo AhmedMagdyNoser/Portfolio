@@ -9,13 +9,15 @@ export const allTechnologies: Record<"JS" | "TS" | "Vite" | "React" | "Next" | "
   Tailwind: { name: "Tailwind", img: "/imgs/technologies/tailwind.svg" },
 };
 
-export const profileImg = "/imgs/me.jpg";
-export const name = "Ahmed Magdy";
-export const jobTitle = "A Next.js | TypeScript Developer";
-export const description =
-  "I'm a software engineer with expertise in building scalable and maintainable web applications using React, Next.js, and TypeScript. I prioritize writing clean, efficient code while delivering seamless and engaging user experiences.";
-export const cvLink = "/ahmed-magdy-cv.pdf";
-export const email = "ahmed.magdy.1138@gmail.com";
+export const author = {
+  img: "/imgs/me.jpg",
+  name: "Ahmed Magdy",
+  jobTitle: "A Next.js | TypeScript Developer",
+  description:
+    "I'm a software engineer with expertise in building scalable and maintainable web applications using React, Next.js, and TypeScript. I prioritize writing clean, efficient code while delivering seamless and engaging user experiences.",
+  email: "ahmed.magdy.1138@gmail.com",
+  cvLink: "/ahmed-magdy-cv.pdf",
+};
 
 export const techStack = [
   "React",
