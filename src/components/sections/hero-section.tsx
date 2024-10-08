@@ -7,8 +7,9 @@ export default function HeroSection({ className = "" }: { className?: string }) 
       <Image
         src="/imgs/spotlight.png"
         alt="Spotlight"
+        quality={85}
         fill
-        priority={true}
+        priority
         className="pointer-events-none absolute left-0 top-0 z-0 animate-fade object-cover"
       />
 
@@ -17,9 +18,10 @@ export default function HeroSection({ className = "" }: { className?: string }) 
         <Image
           src="/imgs/me.jpg"
           alt="Ahmed Magdy Profile Picture"
+          quality={85}
           width={180}
           height={180}
-          priority={true}
+          priority
           className="rounded-full border-[1.5px] border-gray-600"
           style={{ boxShadow: "0 0 75px 5px #eeeeff25, 0 0 15px 1px #eeeeff15" }}
         />

@@ -6,7 +6,7 @@ const projects: Project[] = [
     title: "Leopard Online Store",
     description:
       "Fashion collections for men and women, blending elegance and modern trends with quality craftsmanship to showcase your unique style.",
-    img: "/imgs/projects/leopard.png",
+    img: "/imgs/projects/leopard-project.png",
     technologies: [technologies.Vite, technologies.TS, technologies.React, technologies.Tailwind],
     liveDome: "https://leopardegy.com",
   },
@@ -14,7 +14,7 @@ const projects: Project[] = [
     title: "Pro Sales CRM",
     description:
       "A CRM platform that simplifies sales, optimizes customer management, and increases productivity with lead tracking, automation, and analytics.",
-    img: "/imgs/projects/pro-sales.jpg",
+    img: "/imgs/projects/pro-sales-project.jpg",
     technologies: [technologies.Vite, technologies.JS, technologies.React, technologies.Tailwind],
     liveDome: "https://ahmedmagdynoser.github.io/Pro-Sales",
   },

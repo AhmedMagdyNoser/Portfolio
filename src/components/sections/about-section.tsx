@@ -38,7 +38,7 @@ export default function AboutSection({ className = "" }: { className?: string })
             experiences.
           </p>
           <div className="flex-center flex-col gap-2 sm:flex-row">
-            <a href="/cv.pdf" download="Ahmed Magdy CV.pdf" className="basic-btn text-sm">
+            <a href="/cv.pdf" download="Ahmed_Magdy_CV.pdf" className="basic-btn text-sm">
               <solidIcons.Download size={17.5} />
               Download my CV
             </a>
@@ -51,7 +51,14 @@ export default function AboutSection({ className = "" }: { className?: string })
 
         <div className={`grid grid-cols-1 ${GAP} lg:grid-cols-5`}>
           <AboutCard className="relative flex h-[415px] items-end lg:col-span-3">
-            <Image src="/imgs/about.jpg" alt="About" fill priority={true} className="absolute left-0 top-0 object-cover" />
+            <Image
+              src="/imgs/about.jpg"
+              alt="About"
+              priority
+              fill
+              sizes="(max-width: 1024px) 100vw, 50vw"
+              className="absolute left-0 top-0 object-cover"
+            />
             <h3 className="relative z-10 w-[385px] p-6 text-[1.5rem] font-bold">
               I prioritize client collaboration, fostering open communication
             </h3>
