@@ -2,7 +2,11 @@ import solidIcons from "@/components/icons/solid";
 
 export default function ContactSection({ className = "" }: { className?: string }) {
   return (
-    <section className={`section ${className}`}>
+    <section className={`section relative overflow-hidden ${className}`}>
+      <div
+        style={{ backgroundImage: "radial-gradient(ellipse, #ffff9515, #0000, #0000)" }}
+        className="absolute left-1/2 top-1/2 h-[875px] w-full -translate-x-1/2 -translate-y-1/2"
+      />
       <div className="flex-center container flex-col gap-10">
         <h2
           className="w-[650px] max-w-full text-center text-3xl font-bold text-gray-50 md:text-5xl"
