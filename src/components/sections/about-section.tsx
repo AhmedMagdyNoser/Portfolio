@@ -38,7 +38,7 @@ export default function AboutSection({ className = "" }: { className?: string })
             experiences.
           </p>
           <div className="flex-center flex-col gap-2 sm:flex-row">
-            <a href="/cv.pdf" download="Ahmed_Magdy_CV.pdf" className="basic-btn text-sm">
+            <a href="/ahmed-magdy-cv.pdf" download="Ahmed_Magdy_CV.pdf" className="basic-btn text-sm">
               <solidIcons.Download size={17.5} />
               Download my CV
             </a>
