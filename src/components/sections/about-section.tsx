@@ -5,7 +5,7 @@ import SkillBadge from "@/components/skill-badge";
 import EmailButton from "@/components/email-button";
 import solidIcons from "@/components/icons/solid";
 import outlineIcons from "@/components/icons/outline";
-import { LightPlus, LightStar } from "@/components/stars";
+import { LightPlus } from "@/components/stars";
 
 const GAP = "gap-8";
 
