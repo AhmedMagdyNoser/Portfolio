@@ -20,9 +20,9 @@ const projects: Project[] = [
   },
 ];
 
-export default function ProjectsSection() {
+export default function ProjectsSection({ className = "" }: { className?: string }) {
   return (
-    <section id="projects" className="section bg-gradient-to-b from-[#000310] to-gray-900">
+    <section id="projects" className={`section ${className}`}>
       <div className="container">
         <h2 className="mb-10 text-center text-3xl font-bold text-gray-50">
           A small selection of <span className="text-purple-300">recent projects</span>

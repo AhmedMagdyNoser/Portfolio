@@ -1,9 +1,9 @@
 import Image from "next/image";
 import BlockQuote from "@/components/block-quote";
 
-export default function HeroSection() {
+export default function HeroSection({ className = "" }: { className?: string }) {
   return (
-    <section className="section relative bg-gradient-to-b from-[#000218] to-[#0a0a0a]">
+    <section className={`section relative ${className}`}>
       <Image
         src="/imgs/spotlight.png"
         alt="Spotlight"

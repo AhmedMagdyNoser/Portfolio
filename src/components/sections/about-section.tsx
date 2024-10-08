@@ -25,9 +25,9 @@ const skills = [
   "GitHub",
 ];
 
-export default function AboutSection() {
+export default function AboutSection({ className = "" }: { className?: string }) {
   return (
-    <section id="about" className="section bg-gradient-to-b from-[#0a0a0a] to-[#000310]">
+    <section id="about" className={`section ${className}`}>
       <div className={`container flex flex-col ${GAP}`}>
         <h2 className="mb-2 text-center text-3xl font-bold text-gray-50">Who am I</h2>
 
