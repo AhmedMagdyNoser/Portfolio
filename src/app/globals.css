@@ -9,6 +9,9 @@
   .section {
     @apply flex-center min-h-screen py-10;
   }
+  .about-card {
+    @apply overflow-hidden rounded-3xl border border-[#151930] text-gray-100 shadow-lg;
+  }
   .btn-style {
     @apply flex-center gap-2 rounded-2xl px-6 py-3 font-medium text-gray-100 transition-colors duration-[350ms];
   }
@@ -22,6 +25,13 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+.noselect {
+  user-select: none; /* For modern browsers */
+  -webkit-user-select: none; /* For Safari */
+  -moz-user-select: none; /* For Firefox */
+  -ms-user-select: none; /* For Internet Explorer/Edge */
 }
 
 @keyframes fade {
@@ -42,14 +52,5 @@ html {
   }
   100% {
     transform: translateY(0px);
-  }
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
   }
 }

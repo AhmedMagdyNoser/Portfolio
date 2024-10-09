@@ -9,12 +9,12 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = { title: author.name, description: author.description };
+export const metadata: Metadata = { title: author.name, description: author.bio };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={inter.className}>
-      <body>{children}</body>
+    <html lang="en">
+      <body className={`bg-gray-950 text-gray-50 ${inter.className}`}>{children}</body>
     </html>
   );
 }

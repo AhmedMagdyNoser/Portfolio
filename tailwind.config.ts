@@ -12,7 +12,6 @@ const config: Config = {
       animation: {
         fade: "fade 0.5s",
         float: "float 4.5s infinite ease-in-out",
-        spin: "spin 6.5s infinite linear",
       },
     },
   },
