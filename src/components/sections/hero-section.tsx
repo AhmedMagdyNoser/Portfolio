@@ -41,6 +41,9 @@ export default function HeroSection({ className = "" }: { className?: string }) 
         <a href="#about" className="basic-btn">
           Show my work 🚀
         </a>
+
+        {/* Under Construction Message */}
+        <p className="mt-4 text-center text-sm text-[#aaa]">This website is currently under construction.</p>
       </div>
     </section>
   );

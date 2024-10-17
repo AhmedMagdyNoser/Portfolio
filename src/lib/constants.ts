@@ -15,7 +15,7 @@ export const author = {
   jobTitle: "Software Engineer",
   bio: "A software engineer specializing in React, Next.js, and TypeScript, dedicated to building high-performance web applications. I focus on clean, efficient code to deliver innovative solutions that adapt to future growth and enhance user experience.",
   email: "ahmed.magdy.1138@gmail.com",
-  cvLink: "/ahmed-magdy-cv.pdf",
+  cvLink: "/Ahmed Magdy CV.pdf",
 };
 
 export const techStack = [
